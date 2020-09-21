@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+  
+}
+
+.image-cropper {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+	margin: 0px 65px;
+  }
+  
+  .profile-img {
+    margin-left: -25%;
+    height: 100%;
+    width: auto;
+  }
+  
+  .name {
+    color: white;
+	  text-align:center;
+    width: 200px;
+	  padding: 10px 25px;
+  }
+
+.navigation-list {
+  padding: 0px 10px;
+}
+
+.sidenav-element {
+  padding: 8px 8px 20px 30px;
+  font-size: 20px;
+  color: #818181;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  width: 200px;
+
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  transition: margin-left .5s;
+  padding: 16px 16px 16px 0px;
+  margin-left: 250px;
+}
+
+.openSibebarBtn {
+  left:0;
+  top: 16px;
+  cursor:pointer;
+  height: 40px;
+  width: 40px;
+  background-color:slategrey;
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  position: sticky;
+}
+
+.content {
+  margin: 10px 45px;
+  max-width: 900px;  
+}
+
+.subtitle {
+  margin: 0px 0px 40px 0px;
+}
+
+.info-block {
+  padding: 0px 0px 30px 0px;
+}
+
+.arrowpart {
+    float: left;
+    width: 35px;
+    height: 50px;
+    color:#f1f1f1;
+    font-size: 45px;
+}
+
+.right-area {
+  border-left: solid 1px slategrey;
+  padding: 0px 15px 15px 15px;
+}
+
+.edu-details {
+  background-color:#f1f1f1;
+  padding: 5px 45px 20px 45px;
+  margin: 0px 15px;
+}
+
+.education-elem {
+  display: grid;  
+  grid-template-columns: 1fr 10fr;  
+}
+
+.year {
+  margin: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  color: slategray;
+}
+
+.edu-title {
+  color: slategray;
+  font-size: 18px;
+  font-weight:bolder;
+  padding: 10px 10px;
+}
+
+.education {
+  overflow-y: scroll;
+  height: 350px;
+}
+
+.icon {
+  padding: 0px 23px 0px 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .sidenav {
+    width: 60px;
+    transition: 0s;
+    padding-top: 50px;
+  }
+
+  .main {
+    margin-left: 80px;
+  }
+
+  .sidenav-element {
+    padding: 8px 8px 20px 5px;
+  }
+
+  .image-cropper {
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+  }
+
+  .name {
+    display: none;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <div class="image-cropper">
+    <img class="profile-img" src="images/man-face.jpg" alt="Avatar photo">
+  </div>
+  <p class="name">John Doe</p>
+  <nav>
+    <ul class="navigation-list">
+      <li><a class="sidenav-element" href="#about"><i class="fa fa-fw fa-home icon" aria-hidden="true"></i> About</a></li>
+      <li><a class="sidenav-element" href="#education"><i class="fa fa-graduation-cap icon" aria-hidden="true"></i> Education</a></li>
+      <li><a class="sidenav-element" href="#experience"><i class="fa fa-pencil icon" aria-hidden="true"></i> Experience</a></li>
+      <li><a class="sidenav-element" href="#skills"><i class="fa fa-diamond icon" aria-hidden="true"></i> Skills</a></li>
+      <li><a class="sidenav-element" href="#portfolio"><i class="fa fa-shopping-bag icon" aria-hidden="true"></i> Portfolio</a></li>
+      <li><a class="sidenav-element" href="#contacts"><i class="fa fa-paper-plane icon" aria-hidden="true"></i> Contacts</a></li>
+      <li><a class="sidenav-element" href="#feedbacks"><i class="fa fa-comment-o icon" aria-hidden="true"></i> Feedbacks</a></li>
+    </ul>
+  </nav>
+</div>
+ 
+<div id="main" class="main">
+  <div class="openSibebarBtn" onclick="toggleSidebar()">&#9776;</div>
+  <div class="content">
+    <div id="about" class="info-block">
+	  <h2 class="subtitle">About</h2>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor morbi non arcu risus quis varius quam quisque id. Arcu felis bibendum ut tristique et. Turpis massa sed elementum tempus. Eleifend donec pretium vulputate sapien nec sagittis aliquam. Tincidunt augue interdum velit euismod in. Eget nunc scelerisque viverra mauris in. Pulvinar mattis nunc sed blandit. Venenatis a condimentum vitae sapien pellentesque habitant. Fringilla urna porttitor rhoncus dolor purus non enim. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tincidunt dui ut ornare lectus sit amet. Aenean sed adipiscing diam donec adipiscing tristique. Adipiscing vitae proin sagittis nisl rhoncus. Ultricies leo integer malesuada nunc vel risus. Nibh tortor id aliquet lectus proin nibh nisl condimentum. Eu turpis egestas pretium aenean pharetra magna. Eget arcu dictum varius duis at consectetur lorem donec massa.</p>
+    </div>	
+	
+	  <div id="education" class="info-block">
+      <h2 class="subtitle">Education</h2>
+      <div class="education">
+	      <div class="education-elem">
+          <div class="year">2016</div>
+          <div class="right-area">
+            <div class="arrowpart"><i class="fa fa-caret-left" aria-hidden="true"></i></div>
+            <div class="edu-details">
+              <div class="edu-title">Title</div>
+              <div>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</i></div>
+            </div>
+          </div>
+        </div>
+        <div class="education-elem">
+          <div class="year">2019</div>
+          <div class="right-area">
+            <div class="arrowpart"><i class="fa fa-caret-left" aria-hidden="true"></i></div>
+            <div class="edu-details">
+              <div class="edu-title">Title</div>
+              <div>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</i></div>
+            </div>
+          </div>
+        </div>
+        <div class="education-elem">
+          <div class="year">2020</div>
+          <div class="right-area">
+            <div class="arrowpart"><i class="fa fa-caret-left" aria-hidden="true"></i></div>
+            <div class="edu-details">
+              <div class="edu-title">Title</div>
+              <div>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</i></div>
+            </div>
+        </div>
+      </div>	
+    </div>
+  </div>
+
+  <div class="info-block">
+	  <h2 class="subtitle">About</h2>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor morbi non arcu risus quis varius quam quisque id. Arcu felis bibendum ut tristique et. Turpis massa sed elementum tempus. Eleifend donec pretium vulputate sapien nec sagittis aliquam. Tincidunt augue interdum velit euismod in. Eget nunc scelerisque viverra mauris in. Pulvinar mattis nunc sed blandit. Venenatis a condimentum vitae sapien pellentesque habitant. Fringilla urna porttitor rhoncus dolor purus non enim. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tincidunt dui ut ornare lectus sit amet. Aenean sed adipiscing diam donec adipiscing tristique. Adipiscing vitae proin sagittis nisl rhoncus. Ultricies leo integer malesuada nunc vel risus. Nibh tortor id aliquet lectus proin nibh nisl condimentum. Eu turpis egestas pretium aenean pharetra magna. Eget arcu dictum varius duis at consectetur lorem donec massa.</</p>
+    </div>	
+
+    <div class="info-block">
+      <h2 class="subtitle">About</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor morbi non arcu risus quis varius quam quisque id. Arcu felis bibendum ut tristique et. Turpis massa sed elementum tempus. Eleifend donec pretium vulputate sapien nec sagittis aliquam. Tincidunt augue interdum velit euismod in. Eget nunc scelerisque viverra mauris in. Pulvinar mattis nunc sed blandit. Venenatis a condimentum vitae sapien pellentesque habitant. Fringilla urna porttitor rhoncus dolor purus non enim. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tincidunt dui ut ornare lectus sit amet. Aenean sed adipiscing diam donec adipiscing tristique. Adipiscing vitae proin sagittis nisl rhoncus. Ultricies leo integer malesuada nunc vel risus. Nibh tortor id aliquet lectus proin nibh nisl condimentum. Eu turpis egestas pretium aenean pharetra magna. Eget arcu dictum varius duis at consectetur lorem donec massa.</</p>
+      </div>	
+
+
+      <div class="info-block">
+        <h2 class="subtitle">About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor morbi non arcu risus quis varius quam quisque id. Arcu felis bibendum ut tristique et. Turpis massa sed elementum tempus. Eleifend donec pretium vulputate sapien nec sagittis aliquam. Tincidunt augue interdum velit euismod in. Eget nunc scelerisque viverra mauris in. Pulvinar mattis nunc sed blandit. Venenatis a condimentum vitae sapien pellentesque habitant. Fringilla urna porttitor rhoncus dolor purus non enim. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tincidunt dui ut ornare lectus sit amet. Aenean sed adipiscing diam donec adipiscing tristique. Adipiscing vitae proin sagittis nisl rhoncus. Ultricies leo integer malesuada nunc vel risus. Nibh tortor id aliquet lectus proin nibh nisl condimentum. Eu turpis egestas pretium aenean pharetra magna. Eget arcu dictum varius duis at consectetur lorem donec massa.</</p>
+        </div>	
+
+
+        <div class="info-block">
+          <h2 class="subtitle">About</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor morbi non arcu risus quis varius quam quisque id. Arcu felis bibendum ut tristique et. Turpis massa sed elementum tempus. Eleifend donec pretium vulputate sapien nec sagittis aliquam. Tincidunt augue interdum velit euismod in. Eget nunc scelerisque viverra mauris in. Pulvinar mattis nunc sed blandit. Venenatis a condimentum vitae sapien pellentesque habitant. Fringilla urna porttitor rhoncus dolor purus non enim. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tincidunt dui ut ornare lectus sit amet. Aenean sed adipiscing diam donec adipiscing tristique. Adipiscing vitae proin sagittis nisl rhoncus. Ultricies leo integer malesuada nunc vel risus. Nibh tortor id aliquet lectus proin nibh nisl condimentum. Eu turpis egestas pretium aenean pharetra magna. Eget arcu dictum varius duis at consectetur lorem donec massa.</</p>
+          </div>	
+
+
+          <div class="info-block">
+            <h2 class="subtitle">About</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor morbi non arcu risus quis varius quam quisque id. Arcu felis bibendum ut tristique et. Turpis massa sed elementum tempus. Eleifend donec pretium vulputate sapien nec sagittis aliquam. Tincidunt augue interdum velit euismod in. Eget nunc scelerisque viverra mauris in. Pulvinar mattis nunc sed blandit. Venenatis a condimentum vitae sapien pellentesque habitant. Fringilla urna porttitor rhoncus dolor purus non enim. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tincidunt dui ut ornare lectus sit amet. Aenean sed adipiscing diam donec adipiscing tristique. Adipiscing vitae proin sagittis nisl rhoncus. Ultricies leo integer malesuada nunc vel risus. Nibh tortor id aliquet lectus proin nibh nisl condimentum. Eu turpis egestas pretium aenean pharetra magna. Eget arcu dictum varius duis at consectetur lorem donec massa.</</p>
+            </div>	
+
+
+            <div class="info-block">
+              <h2 class="subtitle">About</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor morbi non arcu risus quis varius quam quisque id. Arcu felis bibendum ut tristique et. Turpis massa sed elementum tempus. Eleifend donec pretium vulputate sapien nec sagittis aliquam. Tincidunt augue interdum velit euismod in. Eget nunc scelerisque viverra mauris in. Pulvinar mattis nunc sed blandit. Venenatis a condimentum vitae sapien pellentesque habitant. Fringilla urna porttitor rhoncus dolor purus non enim. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tincidunt dui ut ornare lectus sit amet. Aenean sed adipiscing diam donec adipiscing tristique. Adipiscing vitae proin sagittis nisl rhoncus. Ultricies leo integer malesuada nunc vel risus. Nibh tortor id aliquet lectus proin nibh nisl condimentum. Eu turpis egestas pretium aenean pharetra magna. Eget arcu dictum varius duis at consectetur lorem donec massa.</</p>
+              </div>	
+
+              <div class="info-block">
+                <h2 class="subtitle">About</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor morbi non arcu risus quis varius quam quisque id. Arcu felis bibendum ut tristique et. Turpis massa sed elementum tempus. Eleifend donec pretium vulputate sapien nec sagittis aliquam. Tincidunt augue interdum velit euismod in. Eget nunc scelerisque viverra mauris in. Pulvinar mattis nunc sed blandit. Venenatis a condimentum vitae sapien pellentesque habitant. Fringilla urna porttitor rhoncus dolor purus non enim. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tincidunt dui ut ornare lectus sit amet. Aenean sed adipiscing diam donec adipiscing tristique. Adipiscing vitae proin sagittis nisl rhoncus. Ultricies leo integer malesuada nunc vel risus. Nibh tortor id aliquet lectus proin nibh nisl condimentum. Eu turpis egestas pretium aenean pharetra magna. Eget arcu dictum varius duis at consectetur lorem donec massa.</</p>
+                </div>	
+  </div>
+</div>
+
+<script>
+
+var shouldCloseSidebar = true;
+function toggleSidebar() {
+  if(shouldCloseSidebar) {
+    const sidenavElems = document.getElementsByClassName("sidenav");
+    const mainElems = document.getElementsByClassName("main");
+    for (let i = 0; i < sidenavElems.length; i++) {
+        sidenavElems[i].style.width="0px";
+        mainElems[i].style.marginLeft = "0px";
+    }
+  	shouldCloseSidebar = false;
+  } else {
+    const sidenavElems = document.getElementsByClassName("sidenav");
+    const mainElems = document.getElementsByClassName("main");
+    for (let i = 0; i < sidenavElems.length; i++) {
+        sidenavElems[i].style.width="250px";
+        mainElems[i].style.marginLeft = "250px";
+    }
+  	shouldCloseSidebar = true;
+  }
+}
+</script>
+   
+</body>
+</html> 

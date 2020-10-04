@@ -32,6 +32,15 @@ body {
   border-radius: 50%;
 	margin: 0px 65px;
   }
+
+  .image-cropper-small {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+	margin: 5px 20px;
+  border: slategray solid 2px;
+  }
   
   .profile-img {
     margin-left: -25%;
@@ -94,7 +103,7 @@ body {
 }
 
 .info-block {
-  padding: 0px 0px 30px 0px;
+  padding: 20px 0px 30px 0px;
 }
 
 .arrowpart {
@@ -110,22 +119,54 @@ body {
   padding: 0px 15px 15px 15px;
 }
 
-.edu-details {
+.right-area-experience {
+  border-bottom: dashed 1px slategrey;
+  padding: 0px 15px 15px 15px;
+}
+
+.background-details {
   background-color:#f1f1f1;
   padding: 5px 45px 20px 45px;
   margin: 0px 15px;
 }
 
-.education-elem {
+.contact-details {
+  padding: 10px 10px 10px 10px;
+}
+
+.exc-details {
+  padding: 5px 45px 20px 45px;
+  margin: 0px 15px;
+}
+
+.content-elem {
   display: grid;  
   grid-template-columns: 1fr 10fr;  
 }
 
-.year {
-  margin: 15px;
+.left-side-title {
+  margin: 15px 15px 5px 15px;
   font-weight: bold;
   font-size: 18px;
   color: slategray;
+}
+
+.left-side-subtitle{
+  margin: 5px 15px;
+  font-size: 12px;
+  color: gray;
+}
+
+.left-area{
+  width: 100px;
+}
+
+.left-area-small{
+  width: 30px;
+}
+
+.contact-paddings{
+  padding: 5px;
 }
 
 .edu-title {
@@ -143,6 +184,59 @@ body {
 .icon {
   padding: 0px 23px 0px 0px;
 }
+
+.inline-text{
+  font-size: 14px;
+  height: 60px;
+  margin-top: 5px;;
+  line-height:4em
+}
+
+.feedback-elem{
+  padding-top: 20px;
+}
+
+.highlited-text{
+  color: #818181;
+}
+
+.container {
+    width: 100%;
+    background-color: #ddd;
+    box-sizing: border-box;
+    border: #818181, 3px;
+    font-size: 14px;
+  }
+
+.skills {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  height: 25px;
+  line-height:2em
+}
+
+.html {
+  width: 90%; 
+  background-color: #808080;
+  }
+.css {
+  width: 80%;
+   background-color: #808080;
+   }
+.js {
+  width: 65%; 
+  background-color: #808080;
+  }
+.php {
+  width: 60%; 
+  background-color: #808080;
+  }
+
+  .skill {
+    margin-top: 15px;
+  }
 
 @media screen and (max-width: 800px) {
   .sidenav {
@@ -196,43 +290,207 @@ body {
   <div class="openSibebarBtn" onclick="toggleSidebar()">&#9776;</div>
   <div class="content">
     <div id="about" class="info-block">
-	  <h2 class="subtitle">About</h2>
-	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor morbi non arcu risus quis varius quam quisque id. Arcu felis bibendum ut tristique et. Turpis massa sed elementum tempus. Eleifend donec pretium vulputate sapien nec sagittis aliquam. Tincidunt augue interdum velit euismod in. Eget nunc scelerisque viverra mauris in. Pulvinar mattis nunc sed blandit. Venenatis a condimentum vitae sapien pellentesque habitant. Fringilla urna porttitor rhoncus dolor purus non enim. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tincidunt dui ut ornare lectus sit amet. Aenean sed adipiscing diam donec adipiscing tristique. Adipiscing vitae proin sagittis nisl rhoncus. Ultricies leo integer malesuada nunc vel risus. Nibh tortor id aliquet lectus proin nibh nisl condimentum. Eu turpis egestas pretium aenean pharetra magna. Eget arcu dictum varius duis at consectetur lorem donec massa.</p>
+	    <h2 class="subtitle">About</h2>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor morbi non arcu risus quis varius quam quisque id. Arcu felis bibendum ut tristique et. Turpis massa sed elementum tempus. Eleifend donec pretium vulputate sapien nec sagittis aliquam. Tincidunt augue interdum velit euismod in. Eget nunc scelerisque viverra mauris in. Pulvinar mattis nunc sed blandit. Venenatis a condimentum vitae sapien pellentesque habitant. Fringilla urna porttitor rhoncus dolor purus non enim. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tincidunt dui ut ornare lectus sit amet. Aenean sed adipiscing diam donec adipiscing tristique. Adipiscing vitae proin sagittis nisl rhoncus. Ultricies leo integer malesuada nunc vel risus. Nibh tortor id aliquet lectus proin nibh nisl condimentum. Eu turpis egestas pretium aenean pharetra magna. Eget arcu dictum varius duis at consectetur lorem donec massa.</p>
     </div>	
 	
 	  <div id="education" class="info-block">
       <h2 class="subtitle">Education</h2>
       <div class="education">
-	      <div class="education-elem">
-          <div class="year">2016</div>
+	      <div class="content-elem">
+          <div class="left-side-title">2016</div>
           <div class="right-area">
             <div class="arrowpart"><i class="fa fa-caret-left" aria-hidden="true"></i></div>
-            <div class="edu-details">
+            <div class="background-details">
               <div class="edu-title">Title</div>
               <div>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</i></div>
             </div>
           </div>
         </div>
-        <div class="education-elem">
-          <div class="year">2019</div>
+        <div class="content-elem">
+          <div class="left-side-title">2019</div>
           <div class="right-area">
             <div class="arrowpart"><i class="fa fa-caret-left" aria-hidden="true"></i></div>
-            <div class="edu-details">
+            <div class="background-details">
               <div class="edu-title">Title</div>
               <div>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</i></div>
             </div>
           </div>
         </div>
-        <div class="education-elem">
-          <div class="year">2020</div>
+        <div class="content-elem">
+          <div class="left-side-title">2020</div>
           <div class="right-area">
             <div class="arrowpart"><i class="fa fa-caret-left" aria-hidden="true"></i></div>
-            <div class="edu-details">
+            <div class="background-details">
               <div class="edu-title">Title</div>
               <div>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</i></div>
             </div>
         </div>
       </div>	
+    </div>
+  </div>
+
+    <div id="experience" class="info-block">
+      <h2 class="subtitle">Experience</h2>
+      <div">
+	      <div class="content-elem">
+          <div class="left-area">
+            <div class="left-side-title">Google</div>
+            <div class="left-side-subtitle">2018-2019</div>
+          </div>
+          <div class="right-area-experience">
+            <div class="exc-details">
+              <div class="edu-title">Title</div>
+              <div>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</i></div>
+            </div>
+          </div>
+        </div>
+        <div class="content-elem">
+          <div class="left-area">
+            <div class="left-side-title">Twitter</div>
+            <div class="left-side-subtitle">2019-2020</div>
+
+          </div>
+          <div class="right-area-experience">
+            <div class="exc-details">
+              <div class="edu-title">Title</div>
+              <div>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</i></div>
+            </div>
+          </div>
+        </div>
+      </div>	
+
+      <div id="contscts" class="info-block">
+        <h2 class="subtitle">Contacts</h2>
+        <div">
+          <div class="content-elem">
+            <div class="left-area-small">
+              <div class="left-side-title"><i class="fa fa-phone" aria-hidden="true"></i></div>
+            </div>
+            <div class="right-area-experience contact-paddings">
+              <div class="contact-details">
+                <div>0972345675</div>
+              </div>
+            </div>
+          </div>
+          <div class="content-elem">
+            <div class="left-area-small">
+              <div class="left-side-title"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+            </div>
+            <div class="right-area-experience  contact-paddings">
+              <div class="contact-details">
+                <div>johndoe@gmail.com</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-elem">
+            <div class="left-area-small"]>
+              <div class="left-side-title"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+            </div>
+            <div class="right-area-experience  contact-paddings">
+              <div class="contact-details">
+                <div>Twitter</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-elem">
+            <div class="left-area-small">
+              <div class="left-side-title"><i class="fa fa-skype" aria-hidden="true"></i></div>
+            </div>
+            <div class="right-area-experience  contact-paddings">
+              <div class="contact-details">
+                <div>Facebook</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-elem">
+            <div class="left-area-small">
+              <div class="left-side-title"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+            </div>
+            <div class="right-area-experience  contact-paddings">
+              <div class="contact-details">
+                <div>Skype</div>
+              </div>
+            </div>
+          </div>
+        </div>	
+        <div id="feedbacks" class="info-block">
+          <h2 class="subtitle">Feedbacks</h2>
+          <div class="feedback-elem">
+            <div class="background-details">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor morbi non arcu risus quis varius quam quisque id. Arcu felis bibendum ut tristique et. Turpis massa sed elementum tempus.</p>
+            </div>
+            <div class="content-elem">
+              <div class="image-cropper-small ">
+                <img class="profile-img" src="images/man-face.jpg" alt="Feedback photo">
+              </div>
+              <div class="inline-text">
+                <span>Martin Frimann Programmer, </span>
+                <span class="highlited-text">somesite.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback-elem">
+            <div class="background-details">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor morbi non arcu risus quis varius quam quisque id. Arcu felis bibendum ut tristique et. Turpis massa sed elementum tempus.</p>
+            </div>
+            <div class="content-elem">
+              <div class="image-cropper-small ">
+                <img class="profile-img" src="images/man-face.jpg" alt="Feedback photo">
+              </div>
+              <div class="inline-text">
+                <span>Martin Frimann Programmer, </span>
+                <span class="highlited-text">somesite.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback-elem">
+            <div class="background-details">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor morbi non arcu risus quis varius quam quisque id. Arcu felis bibendum ut tristique et. Turpis massa sed elementum tempus.</p>
+            </div>
+            <div class="content-elem">
+              <div class="image-cropper-small ">
+                <img class="profile-img" src="images/man-face.jpg" alt="Feedback photo">
+              </div>
+              <div class="inline-text">
+                <span>Martin Frimann Programmer, </span>
+                <span class="highlited-text">somesite.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="skills" class="info-block">
+          <h2 class="subtitle">Skills</h2>
+          <div class="chart">
+            <div class="container">
+              <div class="skills html">
+                <span class="skill">HTML</span>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="skills css">CSS</div>
+            </div>
+
+            <div class="container">
+              <div class="skills js">JavaScript</div>
+            </div>
+
+            <div class="container">
+              <div class="skills php">PHP</div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
     </div>
   </div>
   </div>

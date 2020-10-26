@@ -7,12 +7,15 @@ import {ExperienceComponent} from './experience/experience.component';
 import {ContactsComponent} from './contacts/contacts.component';
 import {FeedbacksComponent} from './feedbacks/feedbacks.component';
 import {SkillsComponent} from './skills/skills.component';
+import {ModalComponent} from './modal/modal.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
-  declarations: [SideNavComponent, AvatarComponent, EducationComponent, ExperienceComponent, ContactsComponent, FeedbacksComponent, SkillsComponent],
+  declarations: [SideNavComponent, AvatarComponent, EducationComponent, ExperienceComponent, ContactsComponent, FeedbacksComponent, SkillsComponent, ModalComponent],
   imports: [
-    CommonModule
+    CommonModule, MatDialogModule,BrowserAnimationsModule
   ],
   exports: [SideNavComponent, AvatarComponent, EducationComponent, ExperienceComponent, ContactsComponent, FeedbacksComponent, SkillsComponent]
 })

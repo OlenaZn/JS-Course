@@ -3,6 +3,7 @@ import {Education} from "./Education";
 import {Experience} from "./Experience";
 import {Contact} from "./Contact";
 import {Feedback} from "./Feedback";
+import {Message} from "./Message";
 
 
 @Component({
@@ -52,5 +53,7 @@ export class AppComponent {
     new Feedback('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sitamet, consectetur adipiscing elit.', 'Martin Friman. Programmer.', 'https://www.google.com.ua/', 'somesite.com', 'assets/source/profile.png'),
     new Feedback('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sitamet, consectetur adipiscing elit.', 'Martin Friman. Programmer.', 'https://www.google.com.ua/', 'somesite.com', 'assets/source/profile.png')
   ];
+
+  message = new Message('Modal window', 'Click Ok or Cancel')
 
 }

@@ -1,0 +1,19 @@
+.image-cropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+	margin: 0 auto;
+  }
+  
+  .profile-img {
+    margin-left: -25%;
+    height: 100%;
+    width: auto;
+  }
+
+  .name {
+    font-size:38px;
+	margin: 10px 0px;
+  }

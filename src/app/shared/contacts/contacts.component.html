@@ -1,0 +1,17 @@
+<div id="{{contactsId}}" class="info-block">
+    <h2 class="subtitle">{{contactsTitle}}</h2>
+    <ul>
+        <li *ngFor="let contact of contacts">
+            <div class="content-elem">
+                <div class="left-area-small">
+                  <div class="left-side-title"><i class="{{contact.title}}" aria-hidden="true"></i></div>
+                </div>
+                <div class="right-area-experience contact-paddings">
+                  <div class="contact-details">
+                    <div>{{contact.text}}</div>
+                  </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

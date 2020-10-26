@@ -1,0 +1,21 @@
+<div id="{{feedbacksId}}" class="info-block">
+    <h2 class="subtitle">{{feedbacksTitle}}</h2>
+    <ul>
+        <li *ngFor="let feedback of feedbacks">
+            <div class="feedback-elem">
+              <div class="background-details">
+                <p>{{feedback.text}}</p>
+              </div>
+              <div class="content-elem">
+                <div class="image-cropper-small ">
+                  <img class="profile-img" src="{{feedback.imgSrc}}" alt="Feedback photo">
+                </div>
+                <div class="inline-text">
+                  <span>{{feedback.author}}</span>
+                  <span class="highlited-text">{{feedback.linkText}}</span>
+                </div>
+              </div>
+            </div>
+        </li>
+    </ul>
+</div>

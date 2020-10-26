@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <style>
+  
+  .body-style {
+	margin: 0;
+	padding: 0;
+	background-image: url('images/fog-forest.jpg');
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+  }
+
+  .body-background {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+  }
+  
+  .frontpage-content{
+    text-align:center;
+	font-family: "Lato", sans-serif;
+	color:lightgrey;
+	width:30%;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items:center;
+  }
+  
+  .image-cropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+	margin: 0 auto;
+  }
+  
+  .profile-img {
+    margin-left: -25%;
+    height: 100%;
+    width: auto;
+  }
+  
+  .name {
+    font-size:38px;
+	margin: 10px 0px;
+  }
+  
+  .sub-title-1{
+    font-size:20px;
+	margin: 5px 0px;
+  }
+  
+  .sub-title-2{
+    font-size:12px;
+	margin: 10px 0px;
+  } 
+  
+  .button{
+    background-color:white;
+	border:none;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 10px 2px;
+	cursor: pointer;
+	transition-duration: 0.3s;
+  }
+  
+  .button:hover {
+    background-color: slategrey;
+    color: white;
+  }
+  
+  </style>
+  
+  <head>
+    <title>Task 1</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  
+  <body class="body-style">
+  
+	<div class="body-background">
+      <div class="frontpage-content">
+        <div class="image-cropper">
+          <img class="profile-img" src="images/man-face.jpg" alt="Avatar photo">
+	    </div>
+	      
+        <p class="name">John Doe</p>
+        <p class="sub-title-1">Programmer. Creative. Innovator</p>
+        <p class="sub-title-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+	    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	    
+	    <button id="openProfileBtn" class="button">Know more</button>
+	    
+	  </div>
+	</div>
+  </body>
+  
+  <script type="text/javascript">
+    document.getElementById("openProfileBtn").onclick = function () {
+        location.href = "/about";
+    };
+	
+</script>
+  
+</html>

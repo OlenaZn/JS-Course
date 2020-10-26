@@ -1,0 +1,32 @@
+.sidenav-element {
+    padding: 8px 8px 20px 30px;
+    font-size: 20px;
+    color: #818181;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    width: 200px;
+  
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+    
+  }
+
+  .icon {
+    padding: 0px 23px 0px 0px;
+  }
+
+  .navigation-list {
+    padding: 0px 10px;
+  }

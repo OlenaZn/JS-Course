@@ -1,1 +1,20 @@
-<p>education works!</p>
+<div id="{{educationId}}" class="info-block">
+    <h2 class="subtitle">{{educationTitle}}</h2>
+    <div class="education">
+        <ul>
+            <li *ngFor="let education of educations">
+                <div class="content-elem">
+                <div class="left-side-title">{{education.year}}</div>
+                <div class="right-area">
+                  <div class="arrowpart"><i class="fa fa-caret-left" aria-hidden="true"></i></div>
+                  <div class="background-details">
+                    <div class="edu-title">{{education.title}}</div>
+                    <div>{{education.details}}</div>
+                  </div>
+                </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+</div>
+  

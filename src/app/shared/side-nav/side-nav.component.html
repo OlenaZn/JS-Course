@@ -1,1 +1,16 @@
-<p>side-nav works!</p>
+<div id="mySidenav" class="sidenav">
+    <app-avatar [profilePhotoSrc]="profilePhotoSrc">
+        <div avatar-name>{{name}}</div>
+    </app-avatar>
+    <nav>
+      <ul class="navigation-list">
+        <li><a class="sidenav-element" href="#about"><i class="fa fa-fw fa-home icon" aria-hidden="true"></i> About</a></li>
+        <li><a class="sidenav-element" href="#education"><i class="fa fa-graduation-cap icon" aria-hidden="true"></i> Education</a></li>
+        <li><a class="sidenav-element" href="#experience"><i class="fa fa-pencil icon" aria-hidden="true"></i> Experience</a></li>
+        <li><a class="sidenav-element" href="#skills"><i class="fa fa-diamond icon" aria-hidden="true"></i> Skills</a></li>
+        <li><a class="sidenav-element" href="#portfolio"><i class="fa fa-shopping-bag icon" aria-hidden="true"></i> Portfolio</a></li>
+        <li><a class="sidenav-element" href="#contacts"><i class="fa fa-paper-plane icon" aria-hidden="true"></i> Contacts</a></li>
+        <li><a class="sidenav-element" href="#feedbacks"><i class="fa fa-comment-o icon" aria-hidden="true"></i> Feedbacks</a></li>
+      </ul>
+    </nav>
+  </div>

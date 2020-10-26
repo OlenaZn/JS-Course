@@ -1,6 +1,6 @@
 export class Education {
     constructor(
-      public time: string,
+      public year: string,
       public title: string,
       public details: string
     ) {

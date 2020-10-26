@@ -44,3 +44,8 @@
     font-weight:bolder;
     padding: 10px 10px;
   }
+
+  ul {
+    list-style-type: none;
+  }
+  

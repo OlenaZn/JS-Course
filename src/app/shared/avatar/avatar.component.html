@@ -1,1 +1,9 @@
-<p>avatar works!</p>
+<div class="image-cropper">
+    <img src="{{profilePhotoSrc}}" class="profile-img" alt="Profile Picture">
+    <div class="profile-title">
+      <h4>
+        <ng-content select="[avatar-name]"></ng-content>
+      </h4>
+    </div>
+  </div>
+  
